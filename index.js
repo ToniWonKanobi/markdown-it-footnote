@@ -14,12 +14,12 @@ function _footnote_ref(tokens, idx) {
   return '<sup class="footnote-ref"><a href="#fn' + n + '" id="' + id + '">[' + n + ']</a></sup>';
 }
 function _footnote_block_open(tokens, idx, options) {
-  return (options.xhtmlOut ? '<hr class="footnotes-sep" />\n' : '<hr class="footnotes-sep">\n') +
-         '<section class="footnotes">\n' +
+  return '<div class="footnotes">\n' +
+         (options.xhtmlOut ? '<hr class="footnotes-sep" />\n' : '<hr class="footnotes-sep">\n') +
          '<ol class="footnotes-list">\n';
 }
 function _footnote_block_close() {
-  return '</ol>\n</section>\n';
+  return '</ol>\n</div>\n';
 }
 function _footnote_open(tokens, idx) {
   var id = Number(tokens[idx].meta.id + 1).toString();
