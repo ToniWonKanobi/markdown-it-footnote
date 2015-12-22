@@ -1,20 +1,20 @@
 {
-  "name": "markdown-it-footnote",
+  "name": "markdown-it-footnote-conventional",
   "version": "2.0.0",
-  "description": "Footnotes for markdown-it markdown parser.",
+  "description": "Footnotes for markdown-it markdown parser, with some changes from markdown-it-footnote.",
   "keywords": [
     "markdown-it-plugin",
     "markdown-it",
     "markdown",
     "footnotes"
   ],
-  "homepage": "https://github.com/markdown-it/markdown-it-footnote",
+  "homepage": "https://github.com/ToniWonKanobi/markdown-it-footnote-conventional",
   "repository": {
     "type": "git",
-    "url": "git://github.com/markdown-it/markdown-it-footnote.git"
+    "url": "git://github.com/ToniWonKanobi/markdown-it-footnote-conventional.git"
   },
   "bugs": {
-    "url": "https://github.com/markdown-it/markdown-it-footnote/issues"
+    "url": "https://github.com/ToniWonKanobi/markdown-it-footnote-conventional/issues"
   },
   "license": "MIT",
   "main": "index.js",
