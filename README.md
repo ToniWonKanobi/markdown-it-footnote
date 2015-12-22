@@ -1,4 +1,12 @@
-# markdown-it-footnote
+# markdown-it-footnote-conventional
+
+## This is a fork of [`markdown-it-footnote`](https://github.com/markdown-it/markdown-it-footnote "markdown-it-footnote"), for which:
+
+* `<div class="footnotes">` is used in lieu of `<section class="footnotes">`
+* `<hr class="footnotes-sep">` is placed *after* the opening `<div class="footnotes">` instead of before
+    * This makes [Bigfoot.js](http://www.bigfootjs.com "Bigfoot.js")'s removal of the "footnotes `<div>`" work properly
+
+Both changes are more conventional, at least as far as I can see ;)
 
 [![Build Status](https://img.shields.io/travis/markdown-it/markdown-it-footnote/master.svg?style=flat)](https://travis-ci.org/markdown-it/markdown-it-footnote)
 [![NPM version](https://img.shields.io/npm/v/markdown-it-footnote.svg?style=flat)](https://www.npmjs.org/package/markdown-it-footnote)
