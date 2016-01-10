@@ -89,7 +89,7 @@ bower install markdown-it-footnote-conventional --save
 
 ```js
 var md = require('markdown-it')()
-            .use(require('markdown-it-footnote'));
+            .use(require('markdown-it-footnote-conventional'));
 
 md.render(/*...*/) // See examples above
 ```
