@@ -81,8 +81,8 @@ note. <a href="#fnref1" class="footnote-backref">↩</a></p>
 node.js, browser:
 
 ```bash
-npm install markdown-it-footnote --save
-bower install markdown-it-footnote --save
+npm install markdown-it-footnote-conventional --save
+bower install markdown-it-footnote-conventional --save
 ```
 
 ## Use
