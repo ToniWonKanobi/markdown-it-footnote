@@ -1,12 +1,15 @@
 # markdown-it-footnote-conventional
 
-## This is a fork of [`markdown-it-footnote`](https://github.com/markdown-it/markdown-it-footnote "markdown-it-footnote"), for which:
+This is a fork of [`markdown-it-footnote`](https://github.com/markdown-it/markdown-it-footnote "markdown-it-footnote").
 
-* `<div class="footnotes">` is used in lieu of `<section class="footnotes">`
-* `<hr class="footnotes-sep">` is placed *after* the opening `<div class="footnotes">` instead of before
-    * This makes [Bigfoot.js](http://www.bigfootjs.com "Bigfoot.js")'s removal of the "footnotes `<div>`" work properly
+Here are the differences between this fork, and the `master` branch:
 
-Both changes are more conventional, at least as far as I can see ;)
+1. `<div class="footnotes">` is used in lieu of `<section class="footnotes">`
+2. `<hr class="footnotes-sep">` is now a child of the `<div class="footnotes">` instead of a sibling
+
+The first change I made is just a personal preference. Based on the [spec](https://www.w3.org/TR/html5/sections.html#the-section-element), I don't believe the footnotes section at the bottom of a post/page has the same *semantic* meaning as a `<section>`.
+
+The second change I made allows [Bigfoot.js](http://www.bigfootjs.com "Bigfoot.js") to work more consistently. The Bigfoot JavaScript already removed the `<section class="footnotes">`, but it was not removing the `<hr class="footnotes-sep">`, because the `master` branch of `markdown-it-footnote` placed the `<hr class="footnotes-sep">` *outside* of the `<section class="footnotes">`---not within it. As a sibling and not a child of the `<section class="footnotes">`, Bigfoot wouldn't remove the `<hr class="footnotes-sep">`. It does now :)
 
 ***
 
